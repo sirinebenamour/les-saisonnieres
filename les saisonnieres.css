@@ -1,0 +1,373 @@
+
+ html { overflow-x: hidden;
+margin-left:-0.5vw; } 
+ 
+ 
+ 
+ 
+ /* head*/
+ 
+
+ #biere1{
+   width:   100vw;
+ 
+border-bottom: solid 2vw black;
+ }
+ 
+
+
+
+ /*main*/
+ h1{
+  font-family: 'Queen Inline Grunge';
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;}
+
+p{
+  font-family: 'Poppins', sans-serif;}
+
+
+  .printaniere{
+    
+    
+    width: 103vw;
+    
+    margin-left: 1vw;
+    margin-top: 5vw;
+  }
+
+  .photo{
+    width: 8vw;
+    height:5vw;
+
+    padding-right: 2vw;
+    float: right;
+    display: inline;
+    margin-right: 1vw;
+
+  }
+
+  .imgprintaniere{
+    width: 26vw;
+    height:33vw;
+
+    padding-right: 2vw;
+    float: right;
+    display: inline;
+    margin-right: 1vw;
+  }
+ 
+
+  div h1{
+
+    font-size: 1000%;
+  }
+  div h3{
+
+    font-size: 700%;
+  }
+  div p{
+
+    font-size: 480%;
+  }
+
+
+
+
+#commander{
+  left: 5vw; /* ces 3 propriétés permettent de positionner précisément le bouton   */
+  width: 15vw;
+  height: 3vw;
+  border-radius: 50px;
+  border: none;
+  background-color: #DAF3DB;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5vw;
+
+}
+
+
+
+/*separateur noir*/
+.promouvoir{ 
+  width:103vw;
+  background-color: black;
+  height: 15vw;
+  margin-top: 8vw;
+  margin-left: -3vw;
+  
+}
+
+#promouvoirt { 
+  padding-top:3vw;
+  color: white;
+  margin-left: 18vw;
+  font-size:1.5vw;
+  
+  font-family: 'Poppins', sans-serif;    
+  }
+
+
+
+
+
+
+/*carroussel*/
+
+*{box-sizing:border-box;}
+/* CARROUSSEL CONTAINER*/
+.carrousselcontainer {
+  
+  width:103vw;
+  position: relative;
+  margin: auto;
+}
+
+/* CACHER IMAGES */
+
+.slide{
+  display : none;
+  height: 50vw;
+  color:black;
+}
+
+
+/*BOUTONS PREC ET SUIV */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 5vw;
+  color: black;
+  font-weight: bold;
+  font-size: 8vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left:-5vw;
+}
+
+/* POSITION VERS LA DROITE DES BOUTONS SUIV*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* BACKGROUND DES BOUTONS SUIV ET PREC */
+.prev:hover, .next:hover {
+  background-color: white;
+}
+
+
+
+
+/* INDICATEURS DES POSITIONS */
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* animation */
+#fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.navbar{ 
+
+	height:12vw;
+	text-align:center;
+	list-style:none;
+	display:flex;
+	flex-direction:none;
+	
+    
+}
+
+.texte{
+  font-size:0.3vw;
+}
+	
+	
+	
+
+.lit {
+	margin: 4vw;
+	margin-top:3vw;
+	margin: 6vw 3vw auto 3vw;
+}
+.lii {
+	margin-top: 2.8vw;
+	margin: 4vw;
+	margin-top:3vw;
+}
+nav{
+
+	margin-top:-3vw;
+	height:13vw;
+	width:100vw;
+
+	background-color: black;
+}
+.navbar { 
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.headert{
+  margin-left:-2vw;
+  font-family: 'Poppins', sans-serif;
+	text-decoration:none;
+	color:white;
+	font-size:1.5vw;
+	margin-top:1vw;
+}
+.logo{
+	margin-left:0vw;
+	margin-top:3vw;
+	height:7vw;
+}
+.lit:hover{
+	text-decoration:underline;
+}
+
+#cracra{
+}
+footer{
+  margin-left:-1vw;
+	margin-top:4.8vw;
+	height:16vw;
+	width:100vw;
+	background-color: black;
+}
+.footert{
+	font-size:1vw;
+	color:white;
+	margin:2vw;
+	
+}
+.footerlist{
+padding-top:1vw;
+list-style: none;
+padding-left:5vw;
+	
+}
+.divfooter{
+	
+
+}
+.RS{
+	list-style:none;
+	margin-left:1vw;
+	height:4vw;
+	width:1.5vw;
+	padding-bottom:2vw;
+}
+.RSS { 
+	padding-left:5vw;
+	display:  flex;
+	
+	align-items: center;
+}
+.logo2
+{   
+	margin-top:-9vw;
+	margin-left:30vw;
+	height:10vw;;
+	width:18vw;
+}
+.copy{
+	
+	font-size:0.9vw;
+	margin-top:3vw;
+	margin-left:-16.5vw;
+	color:gray;
+}
+.trucinutile{
+	font-size:1vw;
+	padding-left:80vw;
+	list-style:none;
+	margin-top:-4vw;
+	color:white;
+}
+.separation2 {
+    background-color: black;
+    height: 120px;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+    margin: auto;
+}
+.artistes {
+    display:inline-flex;
+    width: 70%;
+    margin: 4% auto auto 15%;
+
+}
+
+.artistestxt {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    padding-right:10%;
+}
+
+.artistesimg {
+    margin-left: 10%;
+    float: right;
+    margin-right: auto;
+    outline: 2px solid white;
+    outline-offset: -17px;
+    float:right;
+    width: 100%;
+}
+
+.photo {
+    width: 28%;
+}
+.scientifiques {
+    display:inline-flex;
+    width: 70%;
+    margin: 4% auto auto 15%;
+}
+
+.scientifiquesimg {
+    margin-left: 10%;
+    float: right;
+    margin-right: auto;
+    outline: 2px solid white;
+    outline-offset: -17px;
+    float:right;
+    width: 100%;
+}
+
+.scientifiquestxt {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    padding-left:10%;
+}

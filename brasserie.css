@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Queen Inline Grunge";
+  src: url(font/QueenInlineGrunge.ttf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.separation {
+  background-color: black;
+  height: 10px;
+}
+
+h1 {
+  font-family: "Queen Inline Grunge";
+  font-size: 40px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: "Queen Inline Grunge";
+  font-size: 27px;
+  font-weight: 600;
+}
+
+#cracra:hover {
+  text-decoration: none;
+}
+#cracra {
+  border-bottom: white 0.3vw solid;
+}
+
+/*menu de navigation header*/
+
+/*contenu*/
+
+.printaniere {
+  width: 70%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+video {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prochainement {
+  width: 70%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.estivaleimg {
+  width: 19vw;
+  padding-right: 70px;
+  float: left;
+  display: inline;
+  margin-left: auto;
+}
+
+/*.button1 {
+	font-size: 20px;
+    width:150px;
+	height:40px;
+	border-radius: 20px;
+	background-color: #CEE3BA;
+	border-style:none;
+}
+.button1:hover {
+	font-size: 20px;
+    width:150px;
+	height:40px;
+	border-radius: 20px;
+	background-color: #000000;
+	color:white;
+	border-style:none;
+}
+.button2 {
+	font-size: 20px;
+    width:150px;
+	height:70px;
+	border-radius: 30px;
+	background-color: #FAD6E8;
+	border-style:none;
+} */
+
+/* bouton en savoir plus + animation*/
+
+.ensavoirplus a {
+  text-decoration: none;
+  color: white;
+}
+
+.ensavoirplus {
+  background-color: var(--background-color);
+  color: white;
+  padding: 0.5em 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  margin-right: 2%;
+
+  --background-color: black;
+  --border-size: 3px;
+  --accent-color: black;
+}
+
+.ensavoirplus:before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  outline: none;
+}
+
+.ensavoirplus:hover::before,
+.ensavoirplus:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  text-decoration: none;
+  outline: none;
+}
+
+/* bouton commander + animation */
+.commander a {
+  text-decoration: none;
+  color: black;
+}
+
+.commander {
+  background-color: var(--background-color);
+  color: black;
+  padding: 0.5em 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  margin: 2%;
+
+  --background-color: #cee3ba;
+  --border-size: 3px;
+  --accent-color: #cee3ba;
+}
+
+.commander:before {
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  outline: none;
+}
+
+.commander:hover::before,
+.commander:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  text-decoration: none;
+  outline: none;
+}
+
+.button2 {
+  background-color: #fad6e8;
+  color: rgb(0, 0, 0);
+  padding: 0.5em 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: -15px;
+}
+
+/* en savoir plus */
+
+.printanierelarge {
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  height: 12vw;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: none;
+}
+
+.lit {
+  margin: 4vw;
+  margin-top: 3vw;
+  margin: 6vw 3vw auto 3vw;
+}
+.lii {
+  margin-top: 2.8vw;
+  margin: 4vw;
+  margin-top: 3vw;
+}
+nav {
+  margin-top: -3vw;
+  height: 13vw;
+  width: 100vw;
+
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headert {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+.logo {
+  margin-left: 0vw;
+  margin-top: 3vw;
+  height: 7vw;
+}
+.lit:hover {
+  text-decoration: underline;
+}
+
+.textprint {
+  font-size: 1.3vw;
+}
+footer {
+  height: 16vw;
+  width: 100vw;
+  background-color: black;
+}
+.footert {
+  font-size: 1vw;
+  color: white;
+  margin: 2vw;
+}
+.footerlist {
+  padding-top: 1vw;
+  list-style: none;
+  padding-left: 5vw;
+}
+
+.RS {
+  list-style: none;
+  margin-left: 1vw;
+  height: 1.5vw;
+  width: 1.5vw;
+  padding-bottom: 2vw;
+}
+.RSS {
+  padding-left: 5vw;
+  display: flex;
+
+  align-items: center;
+}
+.logo2 {
+  margin-top: -9vw;
+  margin-left: 30vw;
+  height: 10vw;
+  width: 18vw;
+}
+.copy {
+  font-size: 0.9vw;
+  margin-top: 3vw;
+  margin-left: -16.5vw;
+  color: gray;
+}
+.trucinutile {
+  font-size: 1vw;
+  padding-left: 80vw;
+  list-style: none;
+  margin-top: -4vw;
+  color: white;
+}
+.separation2 {
+  background-color: black;
+  height: 120px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 20px;
+  margin: auto;
+}
+.artistes {
+  display: inline-flex;
+  width: 70%;
+  margin: 4% auto auto 15%;
+}
+
+.artistestxt {
+  font-size: 1.3vw;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+.artistesimg {
+  margin-left: 10%;
+  float: right;
+  margin-right: auto;
+  outline: 2px solid white;
+  outline-offset: -17px;
+  float: right;
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+}
+.scientifiques {
+  display: inline-flex;
+  width: 70%;
+  margin: 4% auto auto 15%;
+}
+
+.scientifiquesimg {
+  margin-left: 10%;
+  float: right;
+  margin-right: auto;
+  outline: 2px solid white;
+  outline-offset: -17px;
+  float: right;
+  width: 100%;
+}
+
+.scientifiquestxt {
+  font-size: 1.3vw;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}

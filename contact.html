@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="contact.css" />
+		<script type="text/javascript" src="contact.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+			</style> 
+	</head>
+	
+	<body>
+		<main>
+        <nav>
+
+            <ul class="navbar">
+                <li  class="lit"><a href="brasserie.html" class="headert" >BRASSERIE</a></li>
+                <li  class="lit"><a href="nosbieres.html" class="headert" >NOS BIERES</a></li>
+                
+                <li class="lii"><a href="Les saisonnieres.html"> <img class="logo" src="images/logoblanc.png"> </a></li>
+                <li class="lit"><a href="commander.html" class="headert" >COMMANDER</a></li>
+                <li id ="cracra" class="lit"><a href="contact.html"class="headert" >CONTACT</a></li>
+            </ul>
+    
+        </nav>
+
+		<div id="box">
+		  <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
+		    <h3>Contactez-nous</h3>
+		    <label>Nom: <span>*</span></label>
+		    <input type="text" id="name" name="name" placeholder="Nom"/>
+		    <label>Email: <span>*</span></label><span id="info" class="info"></span>
+		    <input type="text" id="email" name="email" placeholder="Email"/>
+		    <label>Sujet: <span>*</span></label>
+		    <input type="text" id="subject" name="subject" placeholder="Demande de renseignement"/>
+		    <label>Message:</label>
+		    <textarea id="message" name="message" placeholder="Message..."></textarea>
+		    <input type="submit" name="send" value="Envoyer le message"/>
+			<div id="statusMessage"> 
+            <!-- <?php if (! empty($db_msg)) { ?>
+              <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>
+            <?php } ?>
+            <?php if (! empty($mail_msg)) { ?>
+              <p class='<?php echo $type_mail_msg; ?>Message'><?php echo $mail_msg; ?></p>
+            <?php } ?> -->
+            </div>
+		  </form>
+		  <div class="divfooter">
+			<footer>
+			 <ul class="footerlist">
+				 <li class="footert">S'inscire à notre Newsletter</li>
+				 <li class="footert"> Nous suivre</li>
+			 </ul>
+			 <ul class="RSS">
+				<li class="RS"><a href="https://www.instagram.com/brasserie_saisonnieres/"> <img class="RS" src="images/instagram.png"> </a></li>
+			
+				<li class="RS"><a href="https://www.tiktok.com/@brasserie_saisonnieres?lang=fr"> <img class="RS" src="images/tiktok.png"> </a></li>
+				 <img class="logo2" src="images/logoblanc.png">   <a class="copy">COPYRIGHT 2022 LES SAISONNIERES</a>
+			 </ul>
+			 <ul>
+				 <li class="trucinutile">Informations</li>
+				 <li class="trucinutile">Données personnelles</li>
+				 <li class="trucinutile">Politique confidentielle</li>
+				 <li class="trucinutile">Mentions légales </li>
+			 </ul>   
+			</footer>
+			</div>
+	    </main>
+	</body>
+<!--
+<?php
+//Base de donnée
+if(!empty($_POST["send"])) {
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$subject = $_POST["subject"];
+	$message = $_POST["message"];
+
+	$connexion = mysqli_connect("localhost", "root", "root", "SAE") or die("Erreur de connexion: " . mysqli_error($connexion));	if($result){
+		$db_msg = "Vos informations de contact sont enregistrées avec succés.";
+		$type_db_msg = "success";
+	}else{
+		$db_msg = "Erreur lors de la tentative d'enregistrement de contact.";
+		$type_db_msg = "error";
+	}
+	
+}
+
+
+?>
+-->
+</html>
+
+

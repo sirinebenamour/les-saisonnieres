@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type = "text/css" rel="stylesheet" href="commander.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title> Commander </title>
+</head>
+<nav>
+
+    <ul class="navbar">
+        <li  class="lit"><a href="brasserie.html" class="headert">BRASSERIE</a></li>
+        <li  class="lit"><a href="nosbieres.html" class="headert">NOS BIERES</a></li>
+        
+        <li class="lii"><a href="Les saisonnieres.html"> <img class="logo" src="images/logoblanc.png"> </a></li>
+        <li  id ="cracra" class="lit"><a href="commander.html" class="headert">COMMANDER</a></li>
+        <li class="lit"><a href="contact.html"class="headert">CONTACT</a></li>
+    </ul>
+
+</nav>
+
+<body>
+     
+    <form action = "commander.php" method="get">
+    <form method="get">
+        <main>
+            <div class = "biere" name="printaniere">
+                <ul class="lesbieres">
+                    <ul>
+              <li>  <a href="ensavoirplus.html"> <img  class ="photo" src="biere_printaniere.png"> </a></li> 
+            </ul>
+                <br>
+                <p name = "laprinta" class="bieres">La Printanière</p>
+                <p class="prix" name="prix" id="prix"> 8,99 €</p>
+                <input type = "button" class = "valeurs" value="-" onclick="decrementValue()">
+                <input type="number" required = '' min="1" max="100" class="quantites" id="number" name="nombre" value="1" />
+                <input type = "button" class="valeurs" value="+" onclick="incrementValue()">
+                <br><br>
+                <a href="#" onclick="ajouter()" id="panier"><input type="submit" class="ajouters" value="Ajouter au panier"></a>
+            </div>
+            <div class = "biere" name="estivale">
+                <ul>
+                    <li> <img class ="photo" src="biere_estivale.png"></li> 
+                  </ul>
+                <br>
+                <p class="bieres">L'Estivale</p>
+                <input type = "button" class = "valeur" value="-">
+                <input type="number" class="quantite" name="quantite">
+                <input type = "button" class="valeur" value="+">
+                <br><br>
+                <div class="ajouter"><p class="adding">Ajouter au panier</p></div>
+            </div>
+            <div class = "biere" name="automnale">
+                <ul>
+                    <li> <img class ="photo" src="biere_automnale.png"></li> 
+                  </ul>
+                <br>
+                <p class="bieres">L'Automnale</p>
+                <input type = "button" class = "valeur" value="-">
+                <input type="number" class="quantite" name="quantite">
+                <input type = "button" class="valeur" value="+">
+                <br><br>
+                <div class="ajouter"><p class="adding">Ajouter au panier</p></div>
+            </div>
+            <div class = "biere" name="hivernale">
+                <ul>
+                    <li> <img class ="photo" src="biere_hivernale.png"></li> 
+                  </ul>
+                <br>
+                <p class="bieres">L'Hivernale</p>
+                <input type = "button" class = "valeur" value="-">
+                <input type="number" class="quantite" name="quantite">
+                <input type = "button" class="valeur" value="+">
+                <br><br>
+                <div class="ajouter"><p class="adding">Ajouter au panier</p></div>
+            </div>
+        
+        </main>
+    <script src="commander.js" type="text/javascript"></script>
+    <div class="divfooter">
+        <footer>
+         <ul class="footerlist">
+             <li class="footert">S'inscire à notre Newsletter</li>
+             <li class="footert"> Nous suivre</li>
+         </ul>
+         <ul class="RSS">
+            <li class="RS"><a href="https://www.instagram.com/brasserie_saisonnieres/"> <img class="RS" src="images/instagram.png"> </a></li>
+        
+            <li class="RS"><a href="https://www.tiktok.com/@brasserie_saisonnieres?lang=fr"> <img class="RS" src="images/tiktok.png"> </a></li>
+             <img class="logo2" src="images/logoblanc.png">   <a class="copy">COPYRIGHT 2022 LES SAISONNIERES</a>
+         </ul>
+         <ul>
+             <li class="trucinutile">Informations</li>
+             <li class="trucinutile">Données personnelles</li>
+             <li class="trucinutile">Politique confidentielle</li>
+             <li class="trucinutile">Mentions légales </li>
+         </ul>   
+        </footer>
+        </div>
+</body>
+</html>

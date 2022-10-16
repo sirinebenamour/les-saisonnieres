@@ -1,0 +1,275 @@
+html { overflow-x: hidden;
+	margin-left:-0.5vw; } 
+	 
+@font-face {
+    font-family: 'Queen Inline Grunge';
+    src: url(QueenInlineGrunge.ttf);
+}
+@font-face {
+	font-family:'Poppins';
+	src: url();
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color:whitesmoke;
+
+}
+#box{
+	width:90vw;
+	margin:2vw auto;
+	padding-top:2vw;
+	font-family: 'Queen Inline Grunge';
+}
+#form{
+	font-family: 'Poppins', sans-serif;
+	border-radius:2px;
+	padding:20px 30px;
+	box-shadow:0 0 15px;
+	font-size:14px;
+	font-weight:bold;
+	width:50vw;
+	margin-left:20vw;
+	float:left;
+	background-color: #CEE3BA;
+}
+h3{
+	text-align:center;
+	font-size:20px;
+}
+input{
+	width:50vw;
+	height:2vw;
+	margin-top:5px;
+	margin-bottom: 20px;
+	border:1px solid #999;
+	border-radius:3px;
+	padding:5px;
+}
+input[type=submit]{
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+	border:1px solid white;
+	
+	font-Weight:bold;
+	font-size:1vw;
+	color: black;
+}
+textarea{
+	height:5vw;
+	width:40vw;
+	margin-top:5px;
+	border-radius:3px;
+	padding:5px;
+	resize:none;
+}
+span{
+	color:red
+}
+.successMessage{
+    background-color: #7acc7d;
+    border: #2b5a2d 1px solid;
+    padding: 5px 9px;
+    color: #262b26;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.errorMessage{
+    background-color: #e64141;
+    border: #da1414 1px solid;
+    padding: 5px 10px;
+    color: #fdf7f7;
+    border-radius: 4px;
+}
+.info{
+    font-size: 0.9em;
+    color: #d67262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+.navbar{ 
+margin-left:-6vw;
+	height:12vw;
+	text-align:center;
+	list-style:none;
+	display:flex;
+	flex-direction:none;
+	
+    
+}
+#cracra:hover{
+	text-decoration: none;
+}
+#cracra{ 
+	border-bottom: white 0.3vw solid;
+	
+}
+
+	
+	
+	
+
+.lit {
+	margin: 4vw;
+	margin-top:3vw;
+	margin: 6vw 3vw auto 3vw;
+}
+.lii {
+	margin-top: 2.8vw;
+	margin: 4vw;
+	margin-top:3vw;
+}
+nav{
+
+	margin-top:-3vw;
+	height:13vw;
+	width:105vw;
+
+	background-color: black;
+}
+.navbar { 
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.headert{
+	font-family: 'Poppins', sans-serif;
+	text-decoration:none;
+	color:white;
+	font-size:1.5vw;
+	margin-top:1vw;
+}
+.logo{
+	margin-left:0vw;
+	margin-top:3vw;
+	height:7vw;
+}
+.lit:hover{
+	text-decoration:underline;
+}
+
+#cracra{
+	
+}
+footer{
+	font-family: 'Poppins';
+	margin-left:-4.5vw;
+	margin-top: 40vw;
+	height:16vw;
+	width:105vw;
+	background-color: black;
+}
+.footert{
+	z-index:1;
+	font-size:1vw;
+	color:white;
+	margin:2vw;
+	
+}
+.footerlist{
+padding-top:1vw;
+list-style: none;
+padding-left:5vw;
+	
+}
+.divfooter{
+	
+
+}
+.RS{
+	
+	list-style:none;
+	margin-left:1vw;
+	height:1.5vw;
+	width:1.5vw;
+	padding-bottom:2vw;
+}
+.RSS { 
+	padding-left:5vw;
+	display:  flex;
+	
+	align-items: center;
+}
+.logo2
+{   
+	margin-top:-9vw;
+	margin-left:30vw;
+	height:10vw;;
+	width:18vw;
+}
+.copy{
+	
+	font-size:0.9vw;
+	margin-top:3vw;
+	margin-left:-16.5vw;
+	color:gray;
+}
+.trucinutile{
+	font-size:1vw;
+	padding-left:80vw;
+	list-style:none;
+	margin-top:-4vw;
+	color:white;
+}
+.separation2 {
+    background-color: black;
+    height: 120px;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 20px;
+    margin: auto;
+}
+.artistes {
+    display:inline-flex;
+    width: 70%;
+    margin: 4% auto auto 15%;
+
+}
+
+.artistestxt {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    padding-right:10%;
+}
+
+.artistesimg {
+    margin-left: 10%;
+    float: right;
+    margin-right: auto;
+    outline: 2px solid white;
+    outline-offset: -17px;
+    float:right;
+    width: 100%;
+}
+
+.photo {
+    width: 28%;
+}
+.scientifiques {
+    display:inline-flex;
+    width: 70%;
+    margin: 4% auto auto 15%;
+}
+
+.scientifiquesimg {
+    margin-left: 10%;
+    float: right;
+    margin-right: auto;
+    outline: 2px solid white;
+    outline-offset: -17px;
+    float:right;
+    width: 100%;
+}
+
+.scientifiquestxt {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    padding-left:10%;
+}
